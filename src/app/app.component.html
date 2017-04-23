@@ -1,3 +1,8 @@
 <h1>
   {{title}}
 </h1>
+<button routerLink="dashboard" routerLinkActive #dashboard="routerLinkActive" [class.active]="dashboard.isActive">Dashboard</button>
+<button routerLink="list" routerLinkActive #list="routerLinkActive" [class.active]="list.isActive">List</button>
+<div>
+<router-outlet></router-outlet>
+</div>
